@@ -1,0 +1,42 @@
+.header {
+  @include image-set("../img/header/header-bg");
+  @include bg-cover;
+
+  padding: 39px 0 191px;
+
+  &__wrapper {
+    @include flex-v-center;
+  }
+
+  &__logo {
+    position: relative;
+    margin-right: 37px;
+    width: 187px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -12px;
+      width: 100%;
+      height: 4px;
+      background-color: #c4c4c4;
+    }
+  }
+
+  &__nav-list {
+    @include flex-v-center;
+  }
+
+  &__nav-item {
+    &:not(:last-child) {
+      margin-right: 23px;
+    }
+  }
+
+  &__nav-link {
+    font-weight: 600;
+    font-size: 14px;
+    color: map-get($colors, second);
+  }
+}
