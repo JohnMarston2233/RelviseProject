@@ -1,0 +1,23 @@
+.promo {
+  &__title {
+    margin: 0 0 34px;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    color: map-get($colors, main);
+  }
+
+  &__descr {
+    margin-bottom: 35px;
+  }
+
+  &__buttons {
+    @include flex-v-center;
+  }
+
+  &__btn {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

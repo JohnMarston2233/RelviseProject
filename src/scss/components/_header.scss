@@ -2,10 +2,12 @@
   @include image-set("../img/header/header-bg");
   @include bg-cover;
 
-  padding: 39px 0 191px;
+  padding: 37px 0 191px;
 
-  &__wrapper {
+  &__nav-wrapper {
     @include flex-v-center;
+
+    margin-bottom: 116px;
   }
 
   &__logo {
