@@ -1,43 +1,47 @@
 /* stylelint-disable */
 
-@mixin bg-cover {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+// @mixin bg-cover {
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+
+// @mixin flex {
+//   display: flex;
+// }
+
+// @mixin flex-v-center {
+//   display: flex;
+//   align-items: center;
+// }
+
+// @mixin flex-h-center {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// @mixin flex-all-center {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// @mixin flex-all-sb {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
 
 @mixin bg-img($path) {
   background: url("#{$path}");
 }
 
-@mixin flex {
-  display: flex;
-}
-
-@mixin flex-v-center {
-  display: flex;
-  align-items: center;
-}
-
-@mixin flex-h-center {
-  display: flex;
-  justify-content: center;
-}
-
-@mixin flex-all-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin flex-all-sb {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 @function rem($pixels, $context: map-get($settings, font-size)) {
   @return #{$pixels/$context}rem;
+}
+
+@function width-el($elements, $margin) {
+  @return calc((100% - ($margin * ($elements - 1))) / $elements);
 }
 
 @mixin image-set($pathToImage) {

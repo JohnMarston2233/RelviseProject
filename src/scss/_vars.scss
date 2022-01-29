@@ -1,7 +1,7 @@
 $settings: (
   font-family: "Montserrat",
   font-size: 14px,
-  content-width: 1140px,
+  content-width: 1047px,
   container-offset: 15px
 );
 $container-width: calc(map-get($settings, content-width) + (map-get($settings, container-offset) * 2));
@@ -11,5 +11,6 @@ $colors: (
   main: #252b42,
   second: #737373,
   primary: #ff7b47,
-  sea-green: #0d5c63
+  sea-green: #0d5c63,
+  section: #fafafa
 );

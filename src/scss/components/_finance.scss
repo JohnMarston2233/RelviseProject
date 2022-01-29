@@ -1,0 +1,37 @@
+.finance {
+  &__cards-wrapper {
+    flex-wrap: wrap;
+
+    @extend %flex;
+  }
+
+  &__card {
+    --elements: 3;
+    --margin: 30px;
+
+    margin-bottom: 20px;
+    padding: 35px 40px;
+    width: width-el(var(--elements), var(--margin));
+    min-height: 242px;
+    box-shadow: 0 13px 19px rgb(0 0 0 / 7%);
+    background-color: map-get($colors, light);
+
+    &:not(:nth-child(3n)) {
+      margin-right: var(--margin);
+    }
+  }
+
+  &__card-icon {
+    margin-bottom: 8px;
+    fill: map-get($colors, sea-green);
+  }
+
+  &__card-title {
+    margin: 0 0 9px;
+  }
+
+  &--move-top {
+    margin-bottom: -51px;
+    transform: translateY(-111px);
+  }
+}

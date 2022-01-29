@@ -1,0 +1,37 @@
+%bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+%flex {
+  display: flex;
+}
+
+%flex-v-center {
+  display: flex;
+  align-items: center;
+}
+
+%flex-h-center {
+  display: flex;
+  justify-content: center;
+}
+
+%flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex-all-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%no-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,9 +1,12 @@
 .promo {
+  max-width: 600px;
+
   &__title {
     margin: 0 0 34px;
     font-weight: 800;
     font-size: 58px;
     line-height: 80px;
+    letter-spacing: 0.2px;
     color: map-get($colors, main);
   }
 
@@ -12,7 +15,7 @@
   }
 
   &__buttons {
-    @include flex-v-center;
+    @extend %flex-v-center;
   }
 
   &__btn {
