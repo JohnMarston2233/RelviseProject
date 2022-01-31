@@ -1,13 +1,13 @@
 .header {
-  @include image-set("../img/header/header-bg");
+  @include image-set("../img/header/header-bg", map-get($colors, section));
+  @include bg-cover;
 
   padding: 37px 0 191px;
-  background-color: map-get($colors, section);
 
   &__nav-wrapper {
-    margin-bottom: 116px;
+    @include flex-v-center;
 
-    @extend %flex-v-center;
+    margin-bottom: 116px;
   }
 
   &__logo {
@@ -27,7 +27,7 @@
   }
 
   &__nav-list {
-    @extend %flex-v-center;
+    @include flex-v-center;
   }
 
   &__nav-item {
@@ -41,6 +41,4 @@
     font-size: 14px;
     color: map-get($colors, second);
   }
-
-  @extend %bg-cover;
 }

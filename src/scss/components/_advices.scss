@@ -1,0 +1,50 @@
+.advices {
+  padding: 104px 0 81px;
+  background-color: map-get($colors, section);
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__descr {
+    margin: 0 auto 45px;
+    max-width: 575px;
+  }
+
+  &__card {
+    --elements: 4;
+    --margin: 39px;
+
+    margin-bottom: 20px;
+    padding: 30px;
+    width: width-el(var(--elements), var(--margin));
+    min-height: 340px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: map-get($colors, light);
+
+    &:not(:nth-child(4n)) {
+      margin-right: var(--margin);
+    }
+
+    &--truth {
+      @include bg-img("../img/advices/advices-img-1.jpg");
+    }
+
+    &--organize {
+      @include bg-img("../img/advices/advices-img-2.jpg");
+    }
+
+    &--action {
+      @include bg-img("../img/advices/advices-img-3.jpg");
+    }
+
+    &--together {
+      @include bg-img("../img/advices/advices-img-4.jpg");
+    }
+  }
+
+  &__card-title {
+    margin: 0 0 15px;
+  }
+}

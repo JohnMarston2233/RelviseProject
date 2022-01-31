@@ -7,13 +7,8 @@
   }
 
   &__descr {
-    margin-bottom: 50px;
-  }
-
-  &__cards-wrapper {
-    flex-wrap: wrap;
-
-    @extend %flex;
+    margin: 0 auto 50px;
+    max-width: 575px;
   }
 
   &__card {
@@ -21,14 +16,32 @@
     --margin: 39px;
 
     margin-bottom: 20px;
-    padding: 30px;
+    padding: 88px 30px 30px;
     width: width-el(var(--elements), var(--margin));
     min-height: 209px;
     text-align: center;
+    background-position: center 30px;
+    background-repeat: no-repeat;
     background-color: map-get($colors, light);
 
     &:not(:nth-child(4n)) {
       margin-right: var(--margin);
+    }
+
+    &--products {
+      @include bg-img("../img/experience/experience-icon-1.svg");
+    }
+
+    &--services {
+      @include bg-img("../img/experience/experience-icon-2.svg");
+    }
+
+    &--enviroment {
+      @include bg-img("../img/experience/experience-icon-3.svg");
+    }
+
+    &--business {
+      @include bg-img("../img/experience/experience-icon-4.svg");
     }
   }
 
