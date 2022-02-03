@@ -1,0 +1,36 @@
+.about-list {
+  padding-left: 51px;
+
+  &__item {
+    @include bg-cover;
+
+    position: relative;
+    margin-bottom: 31px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -51px;
+      top: -1px;
+      width: 32px;
+      height: 32px;
+    }
+
+    &--people {
+      &::before {
+        @include bg-img("../img/about/about-icon-1.svg");
+      }
+    }
+
+    &--speedometr {
+      &::before {
+        @include bg-img("../img/about/about-icon-2.svg");
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 4px;
+  }
+}

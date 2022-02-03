@@ -1,0 +1,33 @@
+.about {
+  padding: 81px 0;
+  background-color: map-get($colors, light);
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__descr {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    max-width: $descr-width;
+  }
+
+  &__content {
+    @include flex;
+
+    justify-content: space-between;
+  }
+
+  &__content-text {
+    padding-top: 22px;
+    max-width: 333px;
+  }
+
+  &__content-title {
+    margin-bottom: 10px;
+  }
+
+  &__content-descr {
+    margin-bottom: 51px;
+  }
+}

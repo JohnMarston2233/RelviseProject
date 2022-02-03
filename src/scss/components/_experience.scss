@@ -7,8 +7,9 @@
   }
 
   &__descr {
-    margin: 0 auto 50px;
-    max-width: 575px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: $descr-width;
   }
 
   &__card {

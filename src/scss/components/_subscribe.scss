@@ -1,0 +1,49 @@
+.subscribe {
+  @include flex-all-sb;
+
+  position: relative;
+  z-index: 5;
+  margin: 0 auto;
+  padding: 30px 40px 30px 50px;
+  max-width: 986px;
+  background-color: map-get($colors, stone);
+  transform: translateY(50px);
+
+  &__title {
+    margin: 0;
+    max-width: 275px;
+  }
+
+  &__form {
+    @include flex;
+
+    height: 58px;
+  }
+
+  &__input {
+    border: 1px solid #e6e6e6;
+    border-radius: 5px 0 0 5px;
+    padding: 0 20px;
+    width: 333px;
+    font-weight: 400;
+    font-size: 14px;
+    color: map-get($colors, second);
+    background-color: #f9f9f9;
+
+    &:focus {
+      outline: 1px solid #dfdfdf;
+    }
+  }
+
+  &__btn {
+    border: 1px solid #e6e6e6;
+    border-radius: 0 5px 5px 0;
+    padding: 0 10px;
+    min-width: 117px;
+    max-width: 275px;
+    font-weight: 400;
+    font-size: 14px;
+    color: map-get($colors, light);
+    background-color: map-get($colors, primary);
+  }
+}

@@ -1,0 +1,30 @@
+.partners {
+  &__content {
+    padding-top: 77px;
+    background-color: map-get($colors, section);
+  }
+
+  &__wrapper {
+    @include flex-v-center;
+
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    --elements: 6;
+    --margin: 30px;
+
+    margin-bottom: 20px;
+    width: width-el(var(--elements), var(--margin));
+
+    &:not(:nth-child(6n)) {
+      margin-right: var(--margin);
+    }
+  }
+
+  &__footer {
+    height: 77px;
+    background-color: map-get($colors, main);
+    transform: translateY(-7px);
+  }
+}

@@ -4,7 +4,6 @@ $settings: (
   content-width: 1047px,
   container-offset: 15px
 );
-$container-width: calc(map-get($settings, content-width) + (map-get($settings, container-offset) * 2));
 $colors: (
   light: #fff,
   dark: #000,
@@ -12,5 +11,8 @@ $colors: (
   second: #737373,
   primary: #ff7b47,
   sea-green: #0d5c63,
-  section: #fafafa
+  section: #fafafa,
+  stone: #17213c
 );
+$container-width: calc(map-get($settings, content-width) + (map-get($settings, container-offset) * 2));
+$descr-width: 575px;
