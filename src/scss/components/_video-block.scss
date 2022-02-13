@@ -35,6 +35,10 @@
       height: 0;
     }
 
+    &:focus {
+      box-shadow: 5px 5px 30px map-get($colors, sea-green);
+    }
+
     &--active {
       opacity: 0;
       visibility: hidden;

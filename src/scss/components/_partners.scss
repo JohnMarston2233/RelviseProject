@@ -4,27 +4,31 @@
     background-color: map-get($colors, section);
   }
 
-  &__wrapper {
-    @include flex-v-center;
-
-    flex-wrap: wrap;
-  }
-
-  &__img {
+  &__item {
     --elements: 6;
     --margin: 30px;
 
     margin-bottom: 20px;
     width: width-el(var(--elements), var(--margin));
+    opacity: 0.7;
+    transition: opacity 500ms ease-in-out;
 
     &:not(:nth-child(6n)) {
       margin-right: var(--margin);
     }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__form-wrapper {
+    transform: translateY(47px);
   }
 
   &__footer {
+    margin-top: -10px;
     height: 77px;
     background-color: map-get($colors, main);
-    transform: translateY(-7px);
   }
 }

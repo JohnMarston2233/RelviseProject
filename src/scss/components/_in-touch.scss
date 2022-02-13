@@ -1,0 +1,61 @@
+.in-touch {
+  padding: 80px 0;
+  background-color: #f3f3f3;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__descr {
+    margin: 0 auto;
+    margin-bottom: 110px;
+    max-width: $descr-width;
+  }
+
+  &__cards {
+    padding: 0 31px;
+  }
+
+  &__card {
+    --elements: 3;
+    --margin: 15px;
+
+    @include flex-v-center;
+
+    flex-direction: column;
+    padding: 50px 40px;
+    width: width-el(var(--elements), var(--margin));
+    background-color: map-get($colors, light);
+    cursor: pointer;
+
+    &:not(:nth-child(3n)) {
+      margin-right: var(--margin);
+    }
+  }
+
+  &__card-icon {
+    margin-bottom: 15px;
+    width: 72px;
+    height: 72px;
+    fill: map-get($colors, sea-green);
+  }
+
+  &__card-link:nth-of-type(2) {
+    margin-bottom: 16px;
+  }
+
+  &__card-btn {
+    border: 1px solid map-get($colors, primary);
+    border-radius: 5px;
+    height: 44px;
+    min-width: 160px;
+    max-width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    color: map-get($colors, primary);
+  }
+
+  &__card-text {
+    margin-bottom: 14px;
+  }
+}

@@ -1,18 +1,45 @@
 <section class="partners">
   <div class="partners__content">
     <div class="container">
-      <div class="partners__wrapper">
-        <img class="partners__img" src="img/partners/partners-img-1.svg" alt="partner hooli">
-        <img class="partners__img" src="img/partners/partners-img-2.svg" alt="partner lyft">
-        <img class="partners__img" src="img/partners/partners-img-3.svg" alt="partner pied piper">
-        <img class="partners__img" src="img/partners/partners-img-4.svg" alt="partner stripe">
-        <img class="partners__img" src="img/partners/partners-img-5.svg" alt="partner aws">
-        <img class="partners__img" src="img/partners/partners-img-6.svg" alt="partner reddit">
-      </div>
-      <div class="subscribe">
+      <ul class="cards-wrapper partners__list">
+        <li class="partners__item">
+          <a href="" class="partners__link">
+            <img src="img/partners/partners-img-1.svg" alt="Partner Hooli">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a href="" class="partners__link">
+            <img src="img/partners/partners-img-2.svg" alt="Partner Lyft">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a href="" class="partners__link">
+            <img src="img/partners/partners-img-3.svg" alt="Partner Pied Piper">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a href="" class="partners__link">
+            <img src="img/partners/partners-img-4.svg" alt="Partner Stripe">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a href="" class="partners__link">
+            <img src="img/partners/partners-img-5.svg" alt="Partner Aws">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a href="" class="partners__link">
+            <img src="img/partners/partners-img-6.svg" alt="Partner Reddit">
+          </a>
+        </li>
+      </ul>
+      <div class="subscribe partners__form-wrapper">
         <h3 class="title-text title-text--white subscribe__title">Subscribe For Latest Newsletter</h3>
         <form class="subscribe__form" action="#">
-          <input class="subscribe__input" type="text" placeholder="Your email" required>
+          <label>
+            <span class="visually-hidden">Email</span>
+            <input class="subscribe__input" type="text" placeholder="Your email" required>
+          </label>
           <button class="btn btn-reset subscribe__btn" type="submit">Subscribe</button>
         </form>
       </div>
