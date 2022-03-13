@@ -1,0 +1,39 @@
+.footer {
+  &__consulting {
+    padding: 40px 0;
+    background-color: map-get($colors, section);
+  }
+
+  &__consulting-wrapper {
+    @include flex-all-sb;
+
+    padding-right: 51px;
+  }
+
+  &__consulting-content {
+  }
+
+  &__consulting-title {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  &__consulting-text {
+  }
+
+  &__consulting-btn {
+    border-radius: 5px;
+    height: 58px;
+    min-width: 160px;
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    background-color: map-get($colors, primary);
+  }
+
+  &__content {
+    padding: 50px 0;
+    background-color: map-get($colors, stone);
+  }
+}

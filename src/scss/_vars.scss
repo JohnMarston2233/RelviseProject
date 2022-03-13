@@ -16,3 +16,4 @@ $colors: (
 );
 $container-width: calc(map-get($settings, content-width) + (map-get($settings, container-offset) * 2));
 $descr-width: 575px;
+$margin-card: 20px;

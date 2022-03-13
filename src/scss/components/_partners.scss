@@ -16,10 +16,6 @@
     &:not(:nth-child(6n)) {
       margin-right: var(--margin);
     }
-
-    &:hover {
-      opacity: 1;
-    }
   }
 
   &__form-wrapper {

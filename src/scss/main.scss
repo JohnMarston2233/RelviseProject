@@ -6,6 +6,7 @@
 
 // подключения компонентов страницы
 // @import "./components/";
+@import "./components/burger";
 @import "./components/header";
 @import "./components/promo";
 @import "./components/experience";
@@ -17,3 +18,8 @@
 @import "./components/partners";
 @import "./components/subscribe";
 @import "./components/in-touch";
+@import "./components/footer";
+@import "./components/footer-nav";
+
+// media запросы
+@import "media";

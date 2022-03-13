@@ -1,0 +1,10 @@
+.burger {
+  --burger-width: 30px;
+  --burger-height: 30px;
+  --burger-line-height: 4px;
+
+  @include burger;
+
+  z-index: 100;
+  display: none;
+}

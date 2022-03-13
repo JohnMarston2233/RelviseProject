@@ -1,0 +1,18 @@
+{
+  "margin center horizontal": {
+    "scope": "scss",
+    "prefix": "g-m0a",
+    "body": [
+      "margin: 0 auto;"
+    ],
+    "description": "Snippet for margin center h"
+  },
+  "getvars": {
+    "scope": "scss",
+    "prefix": "g-vars",
+    "body": [
+      "$1: map-get($$2, $3);"
+    ],
+    "description": "Snippet for get a vars"
+  }
+}

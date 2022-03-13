@@ -2,12 +2,12 @@
   padding-left: 51px;
 
   &__item {
-    @include bg-cover;
-
     position: relative;
     margin-bottom: 31px;
 
     &::before {
+      @include bg-cover;
+
       content: "";
       position: absolute;
       left: -51px;
